@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mystyle.css">
+   
+    <title>Document</title>
+</head>
+<body>
+   <div class="content">
+       <div class="box_area">
+           <div class="box">
+
+           </div>
+       </div>
+       <div class="input-area">
+
+            <div class="copy-text">
+                <button onclick="copy()" >Copy to Clipboard</button>
+                <br>
+
+            </div>
+    
+            <div class="unit">
+                <label for="select-unit">Select Unit.</label>
+                <select  id="select-unit" onchange="changeUnit(this)">
+                    <option >px</option>
+                    <option >em</option>
+                    <option >rem</option>
+                    <option >%</option>
+                </select>
+            </div>
+        
+            <div class="inputs">
+
+                
+
+                <div>
+                    <label for="top-left">Top Left</label>
+                    <br>
+                    <input type="number" id="top-left" value="0" onchange="borderchange(this)">
+                </div>
+                <div>
+                    <label for="top-right">Top Right</label>
+                    <br>
+                    <input type="number" id="top-right" value="0" onchange="borderchange(this)" >
+                </div>    
+                <div>
+                    <label for="bottom-left">Bottom Left</label>
+                    <br>
+                    <input type="number" id="bottom-left" value="0" onchange="borderchange(this)">
+                </div>    
+                <div>
+                    <label for="bottom-right">Bottom Right</label>
+                    <br>
+                    <input type="number" id="bottom-right" value="0" onchange="borderchange(this)">
+                </div>    
+            </div>
+
+            <div id="advanced-settings">
+                <label for="advanced-settings" > Show Advanced Settings</label>
+                <input type="checkbox" id="advancedsettings" onchange="displayAdvancedOption(this.checked,this.id)">
+            </div>
+
+            <div class="advanced-inputs">
+
+                <div>
+                    <label for="advanced-top-left">Top Left</label>
+                    <br>
+                    <input type="number" id="advanced-top-left" value="0" onchange="borderchange(this)">
+                </div>
+                <div>
+                    <label for="advanced-top-right">Top Right</label>
+                    <br>
+                    <input type="number" id="advanced-top-right" value="0" onchange="borderchange(this)">
+                </div>    
+                <div>
+                    <label for="advanced-bottom-left">Bottom Left</label>
+                    <br>
+                    <input type="number" id="advanced-bottom-left" value="0" onchange="borderchange(this)">
+                </div>    
+                <div>
+                    <label for="advanced-bottom-right">Bottom Right</label>
+                    <br>
+                    <input type="number" id="advanced-bottom-right" value="0" onchange="borderchange(this)">
+                    
+                </div>    
+            </div>
+       </div>
+       
+   </div>
+  
+</body>
+<script src="main.js"></script>
+</html>
